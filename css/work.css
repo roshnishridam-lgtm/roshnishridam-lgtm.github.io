@@ -1,0 +1,15 @@
+.work {
+  padding: 40px;
+  background-color: #2d0404;
+}
+
+.work h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.work-item {
+  border: 1px solid #461d1d;
+  padding: 20px;
+  margin-bottom: 20px;
+}
