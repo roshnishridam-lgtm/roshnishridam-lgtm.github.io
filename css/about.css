@@ -1,0 +1,473 @@
+/* Algemene stijl */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #E75480;
+  padding: 2rem;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main sectie */
+#about {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+#about h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+#about p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  
+}
+
+/* Hobby lijst */
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about li {
+  background: rgba(220, 101, 172, 0.579);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#about li strong {
+  color: #2563eb;
+}
+
+/* Afbeelding */
+.corner-img {
+  display: block;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* Footer */
+footer {
+  background: #8d426341;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Zorg dat alles netjes schaalt */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero sectie responsive */
+.hero {
+  display: flex;
+  flex-direction: column; /* standaard: onder elkaar op mobiel */
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+/* Project cards responsive */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Media queries voor grotere schermen */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row; /* naast elkaar op tablet/desktop */
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .profile-pic {
+    margin: 0;
+  }
+
+  .profile-pic img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* ============================================================
+   BLOEMEN ACHTERGROND - LEVENDE KLEUREN
+   ============================================================ */
+.flowers-wrapper {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* ============================================================
+   BLOEM BASIS
+   ============================================================ */
+.flower {
+  position: absolute;
+  opacity: 0.35;
+}
+
+.petal {
+  position: absolute;
+  border-radius: 50% 50% 50% 0;
+  transform-origin: bottom center;
+}
+
+/* ============================================================
+   GROTE BLOEM - RECHTS 
+   ============================================================ */
+.big-flower {
+  top: 80%;
+  right: -15rem;
+  transform: translateY(-50%);
+  width: 550px;
+  height: 550px;
+  animation: floatBig 12s ease-in-out infinite;
+}
+
+.big-flower .petal {
+  width: 160px;
+  height: 220px;
+  background: radial-gradient(ellipse at 30% 20%, #f004b1, #f452cc, #cb2da4);
+  box-shadow: 0 0 40px rgba(255, 193, 7, 0.3), inset 0 -20px 40px rgba(255, 152, 0, 0.2);
+  border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.big-flower .petal::after {
+  content: '';
+  position: absolute;
+  inset: 10%;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at 40% 20%, rgba(255, 255, 255, 0.3), transparent 60%);
+}
+
+.big-flower .p1 { transform: translate(-50%, -100%) rotate(0deg); }
+.big-flower .p2 { transform: translate(-50%, -100%) rotate(45deg); }
+.big-flower .p3 { transform: translate(-50%, -100%) rotate(90deg); }
+.big-flower .p4 { transform: translate(-50%, -100%) rotate(135deg); }
+.big-flower .p5 { transform: translate(-50%, -100%) rotate(180deg); }
+.big-flower .p6 { transform: translate(-50%, -100%) rotate(225deg); }
+.big-flower .p7 { transform: translate(-50%, -100%) rotate(270deg); }
+.big-flower .p8 { transform: translate(-50%, -100%) rotate(315deg); }
+
+/* Groot midden - goud */
+.big-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #b3185e5a, #f52187, #620336);
+  box-shadow: 
+    0 0 60px rgba(255, 193, 7, 0.5),
+    0 0 120px rgba(255, 193, 7, 0.25),
+    inset 0 -10px 30px rgba(255, 152, 0, 0.3);
+  z-index: 2;
+  animation: pulseBig 3s ease-in-out infinite;
+}
+
+/* Glow ring grote bloem */
+.big-center::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.967), transparent 70%);
+  animation: ringBig 4s ease-in-out infinite;
+}
+
+.big-center::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: rgba(255, 215, 0, 0.6);
+  animation: sparkleSpin 8s linear infinite;
+}
+
+/* ============================================================
+   KLEINE BLOEM - LINKS (Paars/Blauw)
+   ============================================================ */
+.small-flower {
+  bottom: 10%;
+  left: 3%;
+  width: 180px;
+  height: 180px;
+  opacity: 0.3;
+  animation: floatSmall 8s ease-in-out infinite;
+}
+
+.small-flower .petal {
+  width: 55px;
+  height: 75px;
+  background: radial-gradient(ellipse at 30% 20%, #ce93d8, #a21f53, #8c1434);
+  box-shadow: 0 0 20px rgba(205, 123, 8, 0.962);
+  border: 1px solid rgba(155, 39, 176, 0.979);
+}
+
+.small-flower .petal::after {
+  content: '';
+  position: absolute;
+  inset: 10%;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at 40% 20%, rgba(255, 255, 255, 0.2), transparent 60%);
+}
+
+.small-flower .sp1 { transform: translate(-50%, -100%) rotate(0deg); }
+.small-flower .sp2 { transform: translate(-50%, -100%) rotate(60deg); }
+.small-flower .sp3 { transform: translate(-50%, -100%) rotate(120deg); }
+.small-flower .sp4 { transform: translate(-50%, -100%) rotate(180deg); }
+.small-flower .sp5 { transform: translate(-50%, -100%) rotate(240deg); }
+.small-flower .sp6 { transform: translate(-50%, -100%) rotate(300deg); }
+
+/* Klein midden - paars */
+.small-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #e1bee7, #7b1fa2, #4a148c);
+  box-shadow: 0 0 30px rgba(156, 39, 176, 0.35);
+  z-index: 2;
+  animation: pulseSmall 3s ease-in-out infinite;
+}
+
+.small-center::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(156, 39, 176, 0.15), transparent 70%);
+  animation: ringSmall 3.5s ease-in-out infinite;
+}
+
+/* ============================================================
+   SPARKLES
+   ============================================================ */
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #fff9c4, #ffd700);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  animation: sparkleFloat 4s ease-in-out infinite;
+}
+
+.s1 { top: 10%; right: 15%; animation-delay: 0s; }
+.s2 { top: 25%; right: 5%; animation-delay: 1.5s; width: 4px; height: 4px; }
+.s3 { top: 70%; right: 20%; animation-delay: 3s; width: 5px; height: 5px; }
+.s4 { top: 85%; right: 8%; animation-delay: 2s; width: 3px; height: 3px; }
+
+/* ============================================================
+   ANIMATIES
+   ============================================================ */
+@keyframes floatBig {
+  0%, 100% { transform: translateY(-50%) rotate(0deg) scale(1); }
+  50% { transform: translateY(-55%) rotate(4deg) scale(1.03); }
+}
+
+@keyframes floatSmall {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  50% { transform: translateY(-10px) rotate(6deg) scale(1.05); }
+}
+
+@keyframes pulseBig {
+  0%, 100% { 
+    box-shadow: 0 0 60px rgba(255, 193, 7, 0.5), 0 0 120px rgba(255, 193, 7, 0.25);
+  }
+  50% { 
+    box-shadow: 0 0 80px rgba(255, 193, 7, 0.7), 0 0 160px rgba(255, 193, 7, 0.35);
+  }
+}
+
+@keyframes pulseSmall {
+  0%, 100% { box-shadow: 0 0 30px rgba(156, 39, 176, 0.35); }
+  50% { box-shadow: 0 0 50px rgba(156, 39, 176, 0.55); }
+}
+
+@keyframes ringBig {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.5); opacity: 0.3; }
+}
+
+@keyframes ringSmall {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.6); opacity: 0.2; }
+}
+
+@keyframes sparkleFloat {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-20px) scale(1.5); opacity: 1; }
+}
+
+@keyframes sparkleSpin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .big-flower {
+    width: 300px;
+    height: 300px;
+    right: -20px;
+    opacity: 0.3;
+  }
+  
+  .big-flower .petal {
+    width: 90px;
+    height: 120px;
+  }
+  
+  .big-center {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .big-center::before {
+    width: 60px;
+    height: 60px;
+    top: -12px;
+    left: -12px;
+  }
+  
+  .small-flower {
+    width: 120px;
+    height: 120px;
+    bottom: 5%;
+    left: 1%;
+    opacity: 0.25;
+  }
+  
+  .small-flower .petal {
+    width: 35px;
+    height: 50px;
+  }
+  
+  .small-center {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .sparkle { display: none; }
+}
+
+@media (max-width: 480px) {
+  .big-flower {
+    width: 200px;
+    height: 200px;
+    right: -15px;
+    opacity: 0.25;
+  }
+  
+  .big-flower .petal {
+    width: 60px;
+    height: 80px;
+  }
+  
+  .big-center {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .big-center::before {
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    left: -8px;
+  }
+  
+  .small-flower {
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+  }
+  
+  .small-flower .petal {
+    width: 25px;
+    height: 35px;
+  }
+  
+  .small-center {
+    width: 12px;
+    height: 12px;
+  }
+}

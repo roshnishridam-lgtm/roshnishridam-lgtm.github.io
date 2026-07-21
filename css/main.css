@@ -1,0 +1,419 @@
+/* Algemene stijl */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #E75480;
+  color: white;
+  padding: 1.5rem;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero sectie */ */
+ .hero {
+  text-align: center;
+  justify-content: space-between;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #9d2e4f63, #E75480);
+  color: white;
+  margin: 0.1rem;
+  padding-left: 1rem;
+}
+
+/* .hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem; 
+} */
+
+.hero h1 {
+    font-size:3rem;
+    color:#cc5b8f;
+    margin-bottom:1.5rem;
+    margin-top: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem; 
+}
+
+
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.hero .btn:hover {
+  background: #e5e7eb;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+#home {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff; /* witte achtergrond */
+  border: 3px solid #E75480; /* roze border */
+  border-radius: 12px;       /* afgeronde hoeken */
+  box-shadow: 0 4px 12px rgba(175, 9, 87, 0.959); /* subtiele schaduw */
+}
+
+#home h2 {
+  color: #9d2e4fb3; /* jouw accentkleur */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#home p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+
+.profile-pic {
+  display: flex;
+  justify-content: center;   /* horizontaal centreren */
+  align-items: center;       /* verticaal centreren */
+  margin: 1rem auto;         /* automatisch centreren */
+  margin-top: 0rem;
+}
+
+.profile-pic img {
+  width: 25rem;              /* kleiner formaat */
+  height: 30rem;
+  object-fit: cover;         /* netjes bijsnijden */
+  border-radius: 50%;        /* ronde vorm */
+  border: 4px solid #FFD700; /* gouden randje */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* subtiele schaduw */
+  margin-top:0rem;
+}
+
+.profile-pic {
+  margin: 0; /* geen extra ruimte */
+}
+
+
+/* Intro sectie */
+#home {
+  max-width: 800px;
+  margin: 6rem auto;
+  padding: 0 1rem;
+ 
+}
+
+#home h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #E75480;   /* mooie roze tint */
+  color: white;                /* tekstkleur */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  position:center;
+}
+
+.btn:hover {
+  background-color: #FF007F;   /* iets fellere roze bij hover */
+}
+
+
+/* Footer */
+footer {
+  background: #8d426341;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Current Roles sectie */
+#roles {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-left: 4px solid #E75480;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#roles h2 {
+  font-size: 2rem;
+  color: #E75480;
+  margin-bottom: 1rem;
+}
+
+#roles p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Recent Work Experience sectie */
+#experience {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #FF007F;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#experience h2 {
+  font-size: 2rem;
+  color: #E75480;
+  margin-bottom: 1rem;
+}
+
+#experience p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Projects sectie */
+#projects {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  color: #E75480;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  flex: 1 1 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project h3 {
+  color: #E75480;
+  margin-bottom: 0.8rem;
+}
+
+.project p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Skills sectie - Moderne kaartjes stijl */
+#skills {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+#skills h2 {
+  font-size: 2.2rem;
+  color: #E75480;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+#skills h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #E75480;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.skills-list li {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(231, 84, 128, 0.1);
+  border-left: 5px solid #E75480;
+  font-size: 1rem;
+  color: #444;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.skills-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0.8rem;
+  top: 1.4rem;
+  color: #E75480;
+  font-size: 1.2rem;
+}
+
+.skills-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(231, 84, 128, 0.2);
+  border-left-width: 6px;
+}
+
+.skills-list li strong {
+  color: #E75480;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:white;
+    color:#444;
+}
+
+/* HERO */
+
+/* .hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#cc5b8f;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#666;
+} */
+
+/* .hero{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90vh;
+    overflow:hidden;
+} */
+
+/* .hero-text{
+    z-index:2;
+} */
+
+.flower-decoration{
+    position:absolute;
+    right:-80px;
+    top:50%;
+    transform:translateY(-50%);
+    width:500px;
+    height:600px;
+}
+
+.flower{
+    position:absolute;
+    border-radius:50%;
+    background:radial-gradient(circle,#ffd6e7 0%,#ff9cbc 70%,#ff6f9e 100%);
+    box-shadow:0 0 25px rgba(255,150,190,.35);
+}
+
+.flower1{
+    width:180px;
+    height:180px;
+    top:50px;
+    right:80px;
+}
+
+.flower2{
+    width:130px;
+    height:130px;
+    top:180px;
+    right:230px;
+}
+
+.flower3{
+    width:160px;
+    height:160px;
+    top:300px;
+    right:60px;
+}
+
+.flower4{
+    width:90px;
+    height:90px;
+    top:350px;
+    right:250px;
+}
+
+.flower5{
+    width:110px;
+    height:110px;
+    top:470px;
+    right:170px;
+}

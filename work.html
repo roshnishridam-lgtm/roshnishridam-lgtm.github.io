@@ -4,31 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work | Roshni</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/work.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
-      <a href="contact.html">Contact</a>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/work.html">Work</a>
+      <a href="/contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h2>Selected Projects</h2>
-    <section class="grid">
-      <article>
-        <h3>Meal Planner App</h3>
-        <p>SQL + Node.js + Prisma backend with Surinamese recipes.</p>
-      </article>
-      <article>
-        <h3>Bookstore Website</h3>
-        <p>Frontend with HTML, CSS, and JS, responsive design.</p>
-      </article>
-    </section>
-  </main>
+  <h2>Selected Projects</h2>
+  <section class="work-gallery">
+
+    <div class="card">
+      <img src="img/project/surihealth.png" alt="Meal Planner App screenshot">
+      <h3>Meal Planner App</h3>
+      <p>
+        Backend project met <strong>SQL, Node.js en Prisma</strong>.  
+        Integratie van <em>Surinaamse recepten</em> zodat technologie en cultuur samenkomen.
+      </p>
+      <p class="status">Status: <span class="in-progress">In Progress</span></p>
+      <a href="https://github.com/viraitrisha/surihealth" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <img src="img/project/Screenshot 2026-07-20 231434.png" alt="Bookstore Website screenshot">
+      <h3>Bookstore Website</h3>
+      <p>
+        Frontend site gebouwd met <strong>HTML, CSS en JavaScript</strong>.  
+        Responsive design voor mobiel én desktop.
+      </p>
+      <p class="status">Status: <span class="completed">Completed</span></p>
+      <a href="27.0.0.1:5502" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <img src="img/project/port.png" alt="Portfolio screenshot">
+      <h3>Portfolio Website</h3>
+      <p>
+        Gebouwd met <strong>React, Tailwind en Vite</strong>.  
+        Een moderne en minimalistische showcase van mijn werk.
+      </p>
+      <p class="status">Status: <span class="in-progress">In Progress</span></p>
+      <a href="#" class="btn disabled">Coming Soon</a>
+    </div>
+
+  </section>
+</main>
+
 
   <footer>
     <p>&copy; 2026 Roshni Portfolio</p>
